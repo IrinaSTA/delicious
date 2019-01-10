@@ -1,7 +1,7 @@
-const express = require('express');
-const session = require('express-session');
-const mongoose = require('mongoose');
-const MongoStore = require('connect-mongo')(session);
+const express = require('express'); // lightweight web dev framework for node.js
+const session = require('express-session'); // to manage sessions
+const mongoose = require('mongoose'); // interface for mongo db
+const MongoStore = require('connect-mongo')(session); //
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
