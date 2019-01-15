@@ -11,7 +11,8 @@ router.get('/', (req, res) => {
   res.render('hello', {
     name: 'Irina',
     // dog is a 'local' variable or a 'local'
-    dog: req.query.dog
+    dog: req.query.dog,
+    title: 'Delicious'
   })
 });
 
