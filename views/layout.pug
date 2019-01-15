@@ -6,8 +6,10 @@ html
     link(rel="shortcut icon" type="image/png" href="/images/icons/doughnut.png")
     meta(name="viewport" content="width=device-width, initial-scale=1")
   body
-    block header
+    //- a block is a section that can be filled in by another template
+    block header 
       header.top
+        //- this is what gets shown by default, if nothing gets passed
         nav.nav
           .nav__section.nav__section--pages
             li.nav__item
@@ -46,6 +48,7 @@ html
                 .flash(class=`flash--${category}`)
                   p.flash__text!= message
                   button.flash__remove(onClick="this.parentElement.remove()") &times;
+    //- this is a div with a class of 'content'
     .content
       block content
 

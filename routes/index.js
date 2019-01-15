@@ -7,7 +7,12 @@ router.get('/', (req, res) => {
   // res.json(irina)
   // res.send('Hey! It works!')
   // res.send(req.query.name);
-  res.json(req.query);
+  // res.json(req.query);
+  res.render('hello', {
+    name: 'Irina',
+    // dog is a 'local' variable or a 'local'
+    dog: req.query.dog
+  })
 });
 
 router.get('/reverse/:name', (req, res) => {
